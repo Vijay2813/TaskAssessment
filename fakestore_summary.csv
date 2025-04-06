@@ -1,0 +1,101 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1743926712145,463,Login,200,OK,Thread Group 1-2,text,true,,1043,225,18,18,https://fakestoreapi.com/auth/login,463,0,121
+1743926711995,639,Login,200,OK,Thread Group 1-1,text,true,,1043,225,18,18,https://fakestoreapi.com/auth/login,639,0,190
+1743926712300,577,Login,200,OK,Thread Group 1-3,text,true,,1049,225,20,20,https://fakestoreapi.com/auth/login,577,0,174
+1743926712609,474,Login,200,OK,Thread Group 1-5,text,true,,1044,225,20,20,https://fakestoreapi.com/auth/login,474,0,82
+1743926712461,650,Login,200,OK,Thread Group 1-4,text,true,,1043,225,20,20,https://fakestoreapi.com/auth/login,650,0,241
+1743926712760,415,Login,200,OK,Thread Group 1-6,text,true,,1046,225,20,20,https://fakestoreapi.com/auth/login,415,0,78
+1743926712910,414,Login,200,OK,Thread Group 1-7,text,true,,1052,225,20,20,https://fakestoreapi.com/auth/login,414,0,85
+1743926713055,499,Login,200,OK,Thread Group 1-8,text,true,,1044,225,20,20,https://fakestoreapi.com/auth/login,499,0,80
+1743926713204,484,Login,200,OK,Thread Group 1-9,text,true,,1044,225,20,20,https://fakestoreapi.com/auth/login,484,0,87
+1743926713505,488,Login,200,OK,Thread Group 1-11,text,true,,1050,225,20,20,https://fakestoreapi.com/auth/login,488,0,83
+1743926713355,701,Login,200,OK,Thread Group 1-10,text,true,,1047,225,20,20,https://fakestoreapi.com/auth/login,701,0,309
+1743926713656,619,Login,200,OK,Thread Group 1-12,text,true,,1041,225,20,20,https://fakestoreapi.com/auth/login,619,0,242
+1743926713805,482,Login,200,OK,Thread Group 1-13,text,true,,1044,225,20,20,https://fakestoreapi.com/auth/login,482,0,87
+1743926713955,416,Login,200,OK,Thread Group 1-14,text,true,,1042,225,20,20,https://fakestoreapi.com/auth/login,416,0,82
+1743926714255,479,Login,200,OK,Thread Group 1-16,text,true,,1044,225,20,20,https://fakestoreapi.com/auth/login,479,0,85
+1743926714105,737,Login,200,OK,Thread Group 1-15,text,true,,1049,225,20,20,https://fakestoreapi.com/auth/login,737,0,305
+1743926714610,234,All Products,200,OK,Thread Group 1-2,text,true,,11512,122,20,20,https://fakestoreapi.com/products,234,0,0
+1743926714405,488,Login,200,OK,Thread Group 1-17,text,true,,1038,225,20,20,https://fakestoreapi.com/auth/login,488,0,82
+1743926714636,370,All Products,200,OK,Thread Group 1-1,text,true,,11516,122,20,20,https://fakestoreapi.com/products,370,0,0
+1743926714555,517,Login,200,OK,Thread Group 1-18,text,true,,1045,225,20,20,https://fakestoreapi.com/auth/login,517,0,118
+1743926714706,412,Login,200,OK,Thread Group 1-19,text,true,,1043,225,20,20,https://fakestoreapi.com/auth/login,412,0,90
+1743926714878,315,All Products,200,OK,Thread Group 1-3,text,true,,11522,122,20,20,https://fakestoreapi.com/products,315,0,0
+1743926714856,405,Login,200,OK,Thread Group 1-20,text,true,,1042,225,20,20,https://fakestoreapi.com/auth/login,404,0,89
+1743926715084,301,All Products,200,OK,Thread Group 1-5,text,true,,11521,122,20,20,https://fakestoreapi.com/products,301,0,0
+1743926715176,227,All Products,200,OK,Thread Group 1-6,text,true,,11515,122,20,20,https://fakestoreapi.com/products,226,0,0
+1743926715112,341,All Products,200,OK,Thread Group 1-4,text,true,,11516,122,20,20,https://fakestoreapi.com/products,341,0,0
+1743926715329,229,All Products,200,OK,Thread Group 1-7,text,true,,11515,122,20,20,https://fakestoreapi.com/products,228,0,0
+1743926715555,315,All Products,200,OK,Thread Group 1-8,text,true,,11519,122,20,20,https://fakestoreapi.com/products,315,0,0
+1743926715690,292,All Products,200,OK,Thread Group 1-9,text,true,,11517,122,20,20,https://fakestoreapi.com/products,292,0,0
+1743926715994,310,All Products,200,OK,Thread Group 1-11,text,true,,11510,122,20,20,https://fakestoreapi.com/products,309,0,0
+1743926716057,317,All Products,200,OK,Thread Group 1-10,text,true,,11526,122,20,20,https://fakestoreapi.com/products,317,0,0
+1743926716276,274,All Products,200,OK,Thread Group 1-12,text,true,,11513,122,20,20,https://fakestoreapi.com/products,274,0,0
+1743926716287,297,All Products,200,OK,Thread Group 1-13,text,true,,11517,122,20,20,https://fakestoreapi.com/products,297,0,0
+1743926716372,223,All Products,200,OK,Thread Group 1-14,text,true,,11516,122,20,20,https://fakestoreapi.com/products,222,0,0
+1743926716735,295,All Products,200,OK,Thread Group 1-16,text,true,,11513,122,20,20,https://fakestoreapi.com/products,295,0,0
+1743926716845,228,Select Product,200,OK,Thread Group 1-2,text,true,,849,124,20,20,https://fakestoreapi.com/products/0,228,0,0
+1743926716842,306,All Products,200,OK,Thread Group 1-15,text,true,,11524,122,20,20,https://fakestoreapi.com/products,306,0,0
+1743926716894,298,All Products,200,OK,Thread Group 1-17,text,true,,11513,122,20,20,https://fakestoreapi.com/products,298,0,0
+1743926717118,215,All Products,200,OK,Thread Group 1-19,text,true,,11516,122,20,20,https://fakestoreapi.com/products,215,0,0
+1743926717007,343,Select Product,200,OK,Thread Group 1-1,text,true,,855,124,20,20,https://fakestoreapi.com/products/0,343,0,0
+1743926717073,301,All Products,200,OK,Thread Group 1-18,text,true,,11522,122,20,20,https://fakestoreapi.com/products,301,0,0
+1743926717264,214,All Products,200,OK,Thread Group 1-20,text,true,,11515,122,20,20,https://fakestoreapi.com/products,214,0,0
+1743926717194,292,Select Product,200,OK,Thread Group 1-3,text,true,,851,124,20,20,https://fakestoreapi.com/products/0,292,0,0
+1743926717403,231,Select Product,200,OK,Thread Group 1-6,text,true,,848,124,20,20,https://fakestoreapi.com/products/0,231,0,0
+1743926717387,288,Select Product,200,OK,Thread Group 1-5,text,true,,853,124,20,20,https://fakestoreapi.com/products/0,288,0,0
+1743926717453,313,Select Product,200,OK,Thread Group 1-4,text,true,,852,124,20,20,https://fakestoreapi.com/products/0,313,0,0
+1743926717558,230,Select Product,200,OK,Thread Group 1-7,text,true,,848,124,20,20,https://fakestoreapi.com/products/0,230,0,0
+1743926717871,307,Select Product,200,OK,Thread Group 1-8,text,true,,852,124,20,20,https://fakestoreapi.com/products/0,307,0,0
+1743926717984,297,Select Product,200,OK,Thread Group 1-9,text,true,,852,124,20,20,https://fakestoreapi.com/products/0,297,0,0
+1743926718304,218,Select Product,200,OK,Thread Group 1-11,text,true,,852,124,20,20,https://fakestoreapi.com/products/0,218,0,0
+1743926718375,295,Select Product,200,OK,Thread Group 1-10,text,true,,854,124,20,20,https://fakestoreapi.com/products/0,295,0,0
+1743926718584,218,Select Product,200,OK,Thread Group 1-13,text,true,,860,124,20,20,https://fakestoreapi.com/products/0,218,0,0
+1743926718595,223,Select Product,200,OK,Thread Group 1-14,text,true,,850,124,20,20,https://fakestoreapi.com/products/0,223,0,0
+1743926718551,268,Select Product,200,OK,Thread Group 1-12,text,true,,852,124,20,20,https://fakestoreapi.com/products/0,268,0,0
+1743926719075,221,Product to Cart,200,OK,Thread Group 1-2,text,true,,905,171,20,20,https://fakestoreapi.com/carts,221,0,0
+1743926719031,297,Select Product,200,OK,Thread Group 1-16,text,true,,848,124,20,20,https://fakestoreapi.com/products/0,297,0,0
+1743926719149,253,Select Product,200,OK,Thread Group 1-15,text,true,,854,124,20,20,https://fakestoreapi.com/products/0,253,0,0
+1743926719193,297,Select Product,200,OK,Thread Group 1-17,text,true,,856,124,20,20,https://fakestoreapi.com/products/0,297,0,0
+1743926719334,217,Select Product,200,OK,Thread Group 1-19,text,true,,852,124,20,20,https://fakestoreapi.com/products/0,217,0,0
+1743926719478,216,Select Product,200,OK,Thread Group 1-20,text,true,,856,124,20,20,https://fakestoreapi.com/products/0,216,0,0
+1743926719351,351,Product to Cart,200,OK,Thread Group 1-1,text,true,,899,171,20,20,https://fakestoreapi.com/carts,351,0,0
+1743926719487,270,Product to Cart,200,OK,Thread Group 1-3,text,true,,897,171,20,20,https://fakestoreapi.com/carts,270,0,0
+1743926719635,222,Product to Cart,200,OK,Thread Group 1-6,text,true,,903,171,20,20,https://fakestoreapi.com/carts,222,0,0
+1743926719375,552,Select Product,200,OK,Thread Group 1-18,text,true,,857,124,20,20,https://fakestoreapi.com/products/0,552,0,0
+1743926719676,291,Product to Cart,200,OK,Thread Group 1-5,text,true,,909,171,20,20,https://fakestoreapi.com/carts,291,0,0
+1743926719789,235,Product to Cart,200,OK,Thread Group 1-7,text,true,,901,171,20,20,https://fakestoreapi.com/carts,235,0,0
+1743926719766,299,Product to Cart,200,OK,Thread Group 1-4,text,true,,896,171,20,20,https://fakestoreapi.com/carts,299,0,0
+1743926720178,315,Product to Cart,200,OK,Thread Group 1-8,text,true,,901,171,20,20,https://fakestoreapi.com/carts,315,0,0
+1743926720281,314,Product to Cart,200,OK,Thread Group 1-9,text,true,,901,171,20,20,https://fakestoreapi.com/carts,314,0,0
+1743926720523,308,Product to Cart,200,OK,Thread Group 1-11,text,true,,907,171,20,20,https://fakestoreapi.com/carts,308,0,0
+1743926720671,324,Product to Cart,200,OK,Thread Group 1-10,text,true,,904,171,20,20,https://fakestoreapi.com/carts,324,0,0
+1743926720819,222,Product to Cart,200,OK,Thread Group 1-14,text,true,,901,171,20,20,https://fakestoreapi.com/carts,222,0,0
+1743926720820,275,Product to Cart,200,OK,Thread Group 1-12,text,true,,912,171,20,20,https://fakestoreapi.com/carts,275,0,0
+1743926720803,293,Product to Cart,200,OK,Thread Group 1-13,text,true,,901,171,20,20,https://fakestoreapi.com/carts,293,0,0
+1743926721329,289,Product to Cart,200,OK,Thread Group 1-16,text,true,,903,171,20,20,https://fakestoreapi.com/carts,289,0,0
+1743926721297,334,Cart Details,200,OK,Thread Group 1-2,text,true,,892,121,20,20,https://fakestoreapi.com/carts/0,334,0,0
+1743926721403,305,Product to Cart,200,OK,Thread Group 1-15,text,true,,902,171,19,19,https://fakestoreapi.com/carts,305,0,0
+1743926721552,217,Product to Cart,200,OK,Thread Group 1-19,text,true,,897,171,19,19,https://fakestoreapi.com/carts,217,0,0
+1743926721491,295,Product to Cart,200,OK,Thread Group 1-17,text,true,,899,171,19,19,https://fakestoreapi.com/carts,295,0,0
+1743926721695,212,Product to Cart,200,OK,Thread Group 1-20,text,true,,899,171,19,19,https://fakestoreapi.com/carts,212,0,0
+1743926721757,351,Cart Details,200,OK,Thread Group 1-3,text,true,,890,121,19,19,https://fakestoreapi.com/carts/0,351,0,0
+1743926721703,420,Cart Details,200,OK,Thread Group 1-1,text,true,,898,121,18,18,https://fakestoreapi.com/carts/0,420,0,0
+1743926721928,213,Product to Cart,200,OK,Thread Group 1-18,text,true,,901,171,17,17,https://fakestoreapi.com/carts,213,0,0
+1743926721858,333,Cart Details,200,OK,Thread Group 1-6,text,true,,900,121,17,17,https://fakestoreapi.com/carts/0,333,0,0
+1743926722025,329,Cart Details,200,OK,Thread Group 1-7,text,true,,900,121,16,16,https://fakestoreapi.com/carts/0,329,0,0
+1743926721968,392,Cart Details,200,OK,Thread Group 1-5,text,true,,902,121,15,15,https://fakestoreapi.com/carts/0,392,0,0
+1743926722066,374,Cart Details,200,OK,Thread Group 1-4,text,true,,893,121,14,14,https://fakestoreapi.com/carts/0,374,0,0
+1743926722494,405,Cart Details,200,OK,Thread Group 1-8,text,true,,894,121,13,13,https://fakestoreapi.com/carts/0,405,0,0
+1743926722597,408,Cart Details,200,OK,Thread Group 1-9,text,true,,898,121,12,12,https://fakestoreapi.com/carts/0,408,0,0
+1743926722832,405,Cart Details,200,OK,Thread Group 1-11,text,true,,896,121,11,11,https://fakestoreapi.com/carts/0,405,0,0
+1743926723042,325,Cart Details,200,OK,Thread Group 1-14,text,true,,898,121,10,10,https://fakestoreapi.com/carts/0,325,0,0
+1743926723098,326,Cart Details,200,OK,Thread Group 1-13,text,true,,900,121,9,9,https://fakestoreapi.com/carts/0,326,0,0
+1743926722996,475,Cart Details,200,OK,Thread Group 1-10,text,true,,893,121,8,8,https://fakestoreapi.com/carts/0,475,0,0
+1743926723098,390,Cart Details,200,OK,Thread Group 1-12,text,true,,895,121,7,7,https://fakestoreapi.com/carts/0,389,0,0
+1743926723619,395,Cart Details,200,OK,Thread Group 1-16,text,true,,900,121,6,6,https://fakestoreapi.com/carts/0,395,0,0
+1743926723709,368,Cart Details,200,OK,Thread Group 1-15,text,true,,899,121,5,5,https://fakestoreapi.com/carts/0,368,0,0
+1743926723770,316,Cart Details,200,OK,Thread Group 1-19,text,true,,900,121,4,4,https://fakestoreapi.com/carts/0,316,0,0
+1743926723787,394,Cart Details,200,OK,Thread Group 1-17,text,true,,898,121,3,3,https://fakestoreapi.com/carts/0,394,0,0
+1743926723907,317,Cart Details,200,OK,Thread Group 1-20,text,true,,892,121,2,2,https://fakestoreapi.com/carts/0,317,0,0
+1743926724142,316,Cart Details,200,OK,Thread Group 1-18,text,true,,896,121,1,1,https://fakestoreapi.com/carts/0,316,0,0
