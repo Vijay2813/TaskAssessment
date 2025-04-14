@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "18dd76b8-c45f-4d89-ae55-f0d2e0717a13",
+		"name": "REST_API_test_demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43907365",
+		"_collection_link": "https://vijay-8283474.postman.co/workspace/Vijay's-Workspace~4bafef76-1fe1-4045-85ed-985d7d6657b6/collection/43907365-18dd76b8-c45f-4d89-ae55-f0d2e0717a13?action=share&source=collection_link&creator=43907365"
+	},
+	"item": [
+		{
+			"name": "(after del)https://fakestoreapi.com/carts Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Item removed successfully\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    pm.expect(response.message).to.equal(\"Item removed successfully\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"userId\": 1,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"title\": \"string\",\r\n      \"price\": 0.1,\r\n      \"description\": \"string\",\r\n      \"category\": \"string\",\r\n      \"image\": \"http://annotation.com\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "https://fakestoreapi.com/carts"
+			},
+			"response": []
+		},
+		{
+			"name": "(delete_prodfrom_cart)https://fakestoreapi.com/carts Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Item removed successfully\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    pm.expect(response.message).to.equal(\"Item removed successfully\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"userId\": 1,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"title\": \"string\",\r\n      \"price\": 0.1,\r\n      \"description\": \"string\",\r\n      \"category\": \"string\",\r\n      \"image\": \"http://annotation.com\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "https://fakestoreapi.com/carts"
+			},
+			"response": []
+		},
+		{
+			"name": "(qty_price)https://fakestoreapi.com/carts Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Price format is valid\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const price = response[0].price;\r",
+							"    pm.expect(typeof price).to.equal(\"number\");\r",
+							"    pm.expect(price.toString()).to.match(/^\\d+(\\.\\d{1,2})?$/); // Decimal format\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Count format is valid\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const count = response[0].rating.count;\r",
+							"    pm.expect(typeof count).to.equal(\"number\");\r",
+							"    pm.expect(Number.isInteger(count)).to.be.true; // Integer format\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 21,\r\n  \"userId\": 1,\r\n  \"products\": [\r\n    {\r\n      \"id\": 21,\r\n      \"title\": \"MBJ Women's Solid Sleeve no deep Neck\",\r\n      \"price\": 6.1,\r\n      \"description\": \"95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem\",\r\n      \"category\": \"string\",\r\n      \"image\": \"https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "https://fakestoreapi.com/products"
+			},
+			"response": []
+		},
+		{
+			"name": "(addto_cart)https://fakestoreapi.com/carts Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"userId\": 1,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"title\": \"string\",\r\n      \"price\": 0.1,\r\n      \"description\": \"string\",\r\n      \"category\": \"string\",\r\n      \"image\": \"http://annotation.com\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "https://fakestoreapi.com/carts"
+			},
+			"response": []
+		},
+		{
+			"name": "(addto_cart)https://fakestoreapi.com/carts Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"userId\": 1,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"title\": \"string\",\r\n      \"price\": 0.1,\r\n      \"description\": \"string\",\r\n      \"category\": \"string\",\r\n      \"image\": \"http://annotation.com\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "https://fakestoreapi.com/products/{11}"
+			},
+			"response": []
+		},
+		{
+			"name": "(login-valid)https://fakestoreapi.com/auth/login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"login with valid credentials\",function(){\r",
+							"    pm.expect(pm.response.json().token).to.not.be.null; // check if token is not null\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"kevinryan\",\r\n    \"password\": \"kev02937@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fakestoreapi.com/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "(get_validlogindetails)https://fakestoreapi.com/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check login credentials\",function(){\r",
+							"    var jsonData = pm.response.json();\r",
+							"    jsonData.forEach(function(item){\r",
+							"        pm.expect(item.id).to.eql(2);\r",
+							"        pm.expect(item.username).to.eql(\"johnd\");\r",
+							"        pm.expect(item.password).to.eql(\"m38rmF$\");\r",
+							"    });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"mor_2314\",\r\n    \"password\": \"83r5^_\"\r\n}\r\n"
+				},
+				"url": "https://fakestoreapi.com/users"
+			},
+			"response": []
+		},
+		{
+			"name": "(login-auth)https://fakestoreapi.com/auth/login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response contains token\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"token\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Token is a valid string\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.token).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.token.length).to.be.greaterThan(10);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"jimmie_k\",\r\n    \"password\": \"klein*#%*\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fakestoreapi.com/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "(product_schema)https://fakestoreapi.com/products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Each product follows correct schema\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"\r",
+							"    pm.expect(jsonData).to.be.an(\"array\"); // Ensure response is an array\r",
+							"\r",
+							"    jsonData.forEach((product) => {\r",
+							"        pm.expect(product).to.have.property(\"id\").that.is.a(\"number\");\r",
+							"        pm.expect(product).to.have.property(\"title\").that.is.a(\"string\");\r",
+							"        pm.expect(product).to.have.property(\"price\").that.is.a(\"number\");\r",
+							"        pm.expect(product).to.have.property(\"description\").that.is.a(\"string\");\r",
+							"        pm.expect(product).to.have.property(\"category\").that.is.a(\"string\");\r",
+							"        pm.expect(product).to.have.property(\"image\").that.is.a(\"string\");\r",
+							"\r",
+							"        pm.expect(product).to.have.property(\"rating\").that.is.an(\"object\");\r",
+							"        pm.expect(product.rating).to.have.property(\"rate\").that.is.a(\"number\");\r",
+							"        pm.expect(product.rating).to.have.property(\"count\").that.is.a(\"number\");\r",
+							"    });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://fakestoreapi.com/products"
+			},
+			"response": []
+		},
+		{
+			"name": "(priceformat_responsetime)https://fakestoreapi.com/products Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Each product has a valid price\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    pm.expect(jsonData).to.be.an(\"array\"); // Ensure response is an array\r",
+							"\r",
+							"    jsonData.forEach((product) => {\r",
+							"        pm.expect(product).to.have.property(\"price\").that.is.a(\"number\");\r",
+							"        pm.expect(product.price).to.be.above(0); // Ensure price is greater than zero\r",
+							"    });\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is within acceptable limits\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200); // Check if response time is under 200ms\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://fakestoreapi.com/products"
+			},
+			"response": []
+		},
+		{
+			"name": "(invalid credentials)https://fakestoreapi.com/auth/login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Fixed status code check\r",
+							"pm.test(\"Status code is 401\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Error message is present\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"username or password is incorrect\");\r",
+							"});\r",
+							"\r",
+							"// Check that the response does not include a token, indicating an error in authentication process.\r",
+							"pm.test(\"Error message is descriptive\", function () {\r",
+							"    var jsonData = pm.response.text();\r",
+							"    pm.expect(jsonData).to.not.include(\"token\");\r",
+							"});\r",
+							"\r",
+							"// Check that the response time is within an acceptable range.\r",
+							"pm.test(\"Response time is within acceptable range\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"jimmie_k\",\r\n    \"password\": \"klein*#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fakestoreapi.com/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "(error_handling)https://fakestoreapi.com/auth/login Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {\r",
+							"    pm.response.to.have.status(401); // Ensure correct status code\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Error message is correct\", function () {\r",
+							"    const response = pm.response.text(); // Changed json() to text() to handle non-JSON response\r",
+							"    pm.expect(response).to.include(\"username or password is incorrect\"); // Fixed the syntax to check response body for error message\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"jimmie_k\",\r\n    \"password\": \"klein*#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fakestoreapi.com/auth/login"
+			},
+			"response": []
+		}
+	]
+}
