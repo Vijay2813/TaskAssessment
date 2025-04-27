@@ -31,4 +31,3 @@ package uiautomation;
 	        driver.findElement(By.id("login-button")).click();
 	    }
 	}
-}
